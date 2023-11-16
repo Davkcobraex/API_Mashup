@@ -1,0 +1,53 @@
+{{!-- <body>
+    <h1>Search App</h1>
+    <form action="/search" method="GET">
+        <input type="text" name="query" placeholder="Search...">
+        <button type="submit">Search</button>
+    </form>
+    {{#if gamesData}}
+    <h2>Search Results:</h2>
+    <ul>
+    {{#each gamesData}}
+        <li>
+            <a href="/games/{{id}}">{{name}}</a>
+        </li>
+    {{/each}}
+    </ul>
+    {{/if}}
+</body> --}}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Your Page Title</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body style="margin: 0; padding: 0; min-height: 100vh;  display: flex; flex-direction: column; flex-grow: 1;">
+    <header>
+        <h1 class="header_title">Game Search Reconmendations</h1>
+    </header>
+    <div class="homepage">
+        <div class="search">    
+            <form action="/search" method="GET">
+                <input class="search-bar" type="text" name="query" placeholder="Search...">
+                <button class="search-button" type="submit">Search</button>
+            </form>    
+        </div>
+        {{#if gamesData}}
+        <div class="search-results"><h2>Search Results:</h2>
+            <ul>
+                {{#each gamesData}}
+                <li>
+                    <a href="/games/{{id}}">{{name}}</a>
+                </li>
+                {{/each}}
+            </ul>
+        </div>
+        {{/if}}  
+    </div>
+</body>
+<footer>
+    <p class="footer">Page Counter: {{counter}}</p>
+</footer>
+</html>

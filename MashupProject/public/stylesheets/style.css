@@ -1,0 +1,187 @@
+header{
+  margin: 0;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f7d9c4;
+  font-family: 'Courier New', Courier, monospace;
+  
+}
+
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: #f7d9c4;
+  position: sticky;
+  bottom: 0;
+}
+.footer{
+  margin: 0;
+}
+.header_title {
+  text-align: center;
+  position: sticky;
+  bottom: 0;
+}
+
+.back{
+  display: inline-block;
+  background-color: #e7a650;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 16px;
+  border-color:  #e9972b;
+  border-width: 3px;
+  margin-left: 30px;
+  cursor: pointer;
+}
+
+
+.homepage{
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  overflow-y: auto;
+}
+.search {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  height: 50px;
+
+  
+}
+
+.search-results{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  margin: 30px;
+  height: 100px;
+  flex-grow: 1;
+  
+}
+ul{
+  list-style: none;
+  padding: 0;
+}
+li{
+  margin: 0;
+  padding: 0;
+  
+}
+
+li a{
+  width: 500px;
+  text-align: center;
+  font-size: 18px;
+  background-color: #fcc9a4;
+  border: 3px solid #d39569;;
+  padding: 20px;
+  margin: 3px;
+  text-decoration: none;
+  color: black;
+  display: block;
+}
+
+.search-bar {
+  width: 350px;
+  padding: 10px;
+  border: 3px solid #e7a650;
+  background-color: #ffd9a7;
+  border-radius: 36px;
+  font-size: 16px;
+  outline: none;
+}
+
+.search-button{
+  display: inline-block;
+  background-color: #e7a650;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 36px;
+  border-color:  #e9972b;
+  border-width: 3px;
+  margin-left: 30px;
+  cursor: pointer;
+}
+
+
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #faedcb;
+}
+
+.container {
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  justify-content: center;
+  height: auto;
+  width: auto;
+  background-color: #faedcb;
+}
+.desc{
+  max-width: 500px;
+}
+
+.stores {
+  height: 100px;
+  width: auto;
+  margin-right: 20px;
+}
+
+.buy{
+  display: inline-block;
+  background-color: #fd8a8a;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 36px;
+  border-color:  #fd5b5b;
+  border-width: 3px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.reviews {
+  margin-right: 80px;
+  width: 500px;
+}
+
+.deals_conatiner {
+  width: 470px;
+}
+
+.deals {
+  margin-bottom: 40px;
+  display: flex;
+}
+
+
+.info {
+  text-align: center;
+  flex-direction: column;
+  width: 350px;
+}
+
+.divider {
+  margin-top: 50px;
+  margin-bottom: 10px;
+  width: auto;
+  height: 5px;
+  background-color: #000000;
+}
+
+

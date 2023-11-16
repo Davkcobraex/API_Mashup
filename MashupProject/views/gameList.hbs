@@ -1,0 +1,75 @@
+{{!-- <h1>Game List</h1>
+<a href="/" ><button>Back to Search</button></a>
+{{#each gameData}}
+    <h2>{{gameTitle}}</h2>
+    <h3>{{youtubeTitle}}</h3>
+    <iframe width="480" height="270"
+        src="https://www.youtube.com/embed/{{youtubeID}}">
+    </iframe>
+    <p class="desc">{{gameDesc}}</p>
+    <h3>Cheapest Deal!</h3>
+    <p>{{cheapestPrice}}{{storeName}}</p>
+    <img class="stores" src="{{storeIcon}}">
+
+    <h3>Other Deal</h3>
+    {{#if otherName}}
+    <p> {{otherPrice}}{{otherName}}</p>
+    {{else}}
+    <p>There are no other deals aat the moment Sorry!</p>
+    {{/if}}
+    <img class="stores" src="{{otherIcons}}">
+
+    <p>{{ratings}}</p>
+{{/each}}
+<p>{{counter}}</p> --}}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Your Page Title</title>
+</head>
+<body>
+    <header>
+        <h1 class="header_title">Simliar Games List</h1>
+        <a href="/"><button class="back">Back to homepage</button></a>
+    </header>
+    {{#each gameData}}
+    <div class="container"> 
+        <div class="reviews">
+            <h2 class="title">{{gameTitle}}</h2>
+            <iframe width="480" height="270" src="https://www.youtube.com/embed/{{youtubeID}}"></iframe>
+            <h3 class="title">{{youtubeTitle}}</h3>
+            <p>{{ratings}}</p>
+            <p class="desc">{{gameDesc}}</p>
+            <div class="divider"></div>
+        </div>
+        <div class="deals_container">
+            
+            <h3>Cheapest Deal!</h3>
+            <div class="deals">
+                <img class="stores" src="{{storeIcon}}">
+                <div class="info">
+                    <p>{{cheapestPrice}}{{storeName}}</p>
+                     <a href="https://www.cheapshark.com/redirect?dealID={{cheapestDealID}}"><button class="buy">Buy Here!</button></a>
+                </div>
+            </div>
+            {{#if otherName}}
+            <div class="deals">
+                <img class="stores" src="{{otherIcons}}">
+                <div class="info">
+                    <p>{{otherPrice}}{{otherName}}</p>
+                    <a href="https://www.cheapshark.com/redirect?dealID={{otherDealID}}"><button class="buy">Buy Here!</button></a>
+                </div>
+            </div>
+            {{/if}}
+        </div> 
+    </div>
+    {{/each}}
+
+    
+</body>
+<footer>
+    <p class="footer">Page Counter: {{counter}}</p>
+</footer>
+</html>
